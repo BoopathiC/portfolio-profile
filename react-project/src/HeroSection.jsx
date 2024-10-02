@@ -31,7 +31,7 @@ const Home = () => {
             <p>Years Of Experience</p>
           </div>
           <div className="stat">
-            <h3>30+</h3>
+            <h3>5+</h3>
             <p>Projects Completed</p>
           </div>
         </div>
@@ -53,9 +53,9 @@ const Home = () => {
       <div class="about-box">
       <ul class="flex-container">
     <li class="tick-item"> Branding & Design</li>
-    <li class="tick-item"> Digital Marketing</li>
+    {/* <li class="tick-item"> </li> */}
     <li class="tick-item"> Web Development</li>
-    <li class="tick-item"> Product Designing</li>
+    {/* <li class="tick-item"> Product Designing</li> */}
 </ul>
 
         <div class="contact-info">
@@ -65,8 +65,8 @@ const Home = () => {
       </div>
       <div class="about-img">
         <div class="external-links">
-          <a href="https://github.com" class="github-link">View Projects on GitHub</a>
-          <a href="https://linkedin.com" class="linkedin-link">Visit on LinkedIn</a>
+          <a href="https://github.com/BoopathiC" class="github-link">View Projects on GitHub</a>
+          <a href="https://www.linkedin.com/in/boopathi-c-168630258/" class="linkedin-link">Visit on LinkedIn</a>
         </div>
       <img src={Image1} alt="Profile" />
 

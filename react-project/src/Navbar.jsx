@@ -48,8 +48,8 @@ const Navbar = () => {
             <li onClick={() => handleNavigation('#about')}>About</li>
             <li onClick={() => handleNavigation('#skills')}>Skills</li>
             <li onClick={() => handleNavigation('projects')}>Projects</li>
-            <li onClick={() => handleNavigation('blog')}>Blog</li>
-            <li onClick={() => handleNavigation('github')}>Github</li>
+            <li onClick={() => handleNavigation('blog')}>Timeline</li>
+            <li onClick={() => handleNavigation('github')}>Contact</li>
           </ul>
         </div>
       )}
