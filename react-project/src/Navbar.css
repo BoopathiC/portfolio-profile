@@ -1,0 +1,100 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem; /* Adjust logo font size as needed */
+}
+
+.nav-links {
+  margin-right: 450px; /* Adjust margin if necessary */
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #bada55;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Full Screen Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center vertically */
+  z-index: 20; /* Above the navbar */
+}
+
+.cancel-icon {
+  color: red;
+  font-size: 2rem;
+  position: absolute; /* Position it absolutely within the overlay */
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Full Screen Navigation */
+.full-screen-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.full-screen-nav li {
+  margin: 20px 0;
+  font-size: 2rem; /* Increase font size for better visibility */
+  color: white;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links by default on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 40px; /* Show hamburger icon on mobile */
+  }
+
+  .nav-links {
+    margin-right: 0; /* Reset margin for mobile */
+  }
+}

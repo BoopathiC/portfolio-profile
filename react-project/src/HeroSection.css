@@ -1,0 +1,521 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 150px 0;
+  background-color: #0d0d0d;
+  width: 99vw;
+}
+
+.hero-content {
+  max-width: 50%;
+  text-align: left;
+  margin-top: -80px;
+  animation: slideUp 1s ease-out forwards; /* Add slideUp animation */
+}
+
+.hero-content h1 #hh {
+  color: #c4ff17;
+  font-size: 6rem;
+}
+
+.hero-content #h {
+  color: rgb(131, 119, 119);
+}
+
+.hero-content p{
+  margin-top: -40px;
+}
+.hero-content h2 {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color:#c4ff17;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #c4ff17;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 1000px;
+  transition: transform 0.5s;
+}
+
+#circle {
+  height: 600px;
+  width: 600px;
+  background-color:  #c4ff17; /* Set border color */
+;
+  border-radius: 1000px;
+  margin-top: -620px;
+  margin-left: -60px;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+.experience-stats {
+  margin-right: 40px;
+  margin-bottom: 50px;
+  animation: slideUp 1.2s ease-out forwards; /* Add slideUp animation */
+}
+
+.stat h3 {
+  color: #c4ff17;
+  font-size: 40px;
+}
+
+.stat p {
+  font-size: 25px;
+}
+
+/* Keyframes for sliding up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Starts from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Ends in the original position */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+    width: 88vw;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .hero-content h1 #hh {
+    font-size: 4rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  .buttons button {
+    padding: 8px 16px;
+  }
+
+  .hero-image img {
+    width: 220px;
+    margin-top: 50px;
+  }
+
+  .experience-stats {
+    flex-direction: column;
+    margin: 20px 0;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .stat {
+    margin: 10px 0;
+  }
+
+  #circle {
+    height: 320px;
+    width: 320px;
+    margin-top: -380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 #hh {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+  padding: 40px 0;
+  background-color: #000000; /* Black background */
+  color: white; /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header {
+  text-align: left; /* Left-align header content */
+  margin-bottom: 40px;
+  margin-left: -800px; /* Consider adjusting this for responsiveness */
+}
+
+.about-header h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #c4ff17;
+}
+
+.about-header h3 {
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.about-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items center vertically */
+  width: 90%;
+  max-width: 1200px; /* Set max width */
+  margin: 0 auto;
+}
+
+.about-box {
+  flex: 1; /* Take up equal space with image */
+  padding-right: 50px;
+  text-align: left;
+  margin-left: -110px; /* Adjust if needed */
+  margin-top: -60px; /* Adjust if needed */
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 15px; /* Spacing between items */
+}
+
+.about-box li {
+  margin-bottom: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white; /* Keep the text color */
+  padding: 15px; /* Keep the padding */
+  border-radius: 20px; /* Keep the border radius */
+  width: 100%; /* Keep the width */
+  border: 2px solid #c4ff17; /* Add a border with the desired color */
+  background-color: transparent; /* Remove background color */
+}
+
+.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 20px 0; /* Remove default margin */
+}
+
+.tick-item {
+  flex: 1 0 45%; /* Set basis to 45% to fit two items per line */
+  margin-right: 20px; /* Add space between items */
+  position: relative;
+  padding-left: 20px; /* Adjust padding to make space for the tick */
+}
+
+.tick-item::before {
+  content: '✔'; /* Add the tick symbol */
+  color: #c4ff17; /* Your desired tick color */
+  position: absolute;
+  left: 0; /* Adjust the position if needed */
+}
+
+/* To ensure the last item in each row doesn't have extra margin */
+.tick-item:nth-child(2n) {
+  margin-right: 0; /* Remove margin for the last item in each row */
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 380px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container */
+  border-radius: 8px; /* Rounded image */
+  margin-top: -530px; /* Adjust for layout */
+  margin-left: 260px; /* Center image based on layout */
+  margin-bottom: 20px; /* Spacing below the image */
+}
+
+.external-links {
+  margin-top: 20px;
+  position: relative;
+}
+
+.github-link {
+  display: block;
+  margin: -50px 60px 0 0; /* Top and bottom margins, with no right margin */
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s; /* Combined transition */
+  background-color: transparent; /* Fully transparent background */
+  border: 2px solid #c4ff17; /* Set border color */
+}
+
+.github-link:hover {
+  background-color: #eac6f6; /* Background color on hover */
+  border-color: blueviolet; 
+  border-width: 3px;
+  color: blueviolet;
+}
+
+.linkedin-link {
+  display: block;
+  margin: 20px 0 0 40px; /* Top and bottom margins, with left margin of 40px */
+  color: white;
+  padding: 12px 24px;
+  border: 2px solid #ffff25; /* Apply border color */
+  font-size: 18px;
+  background-color: transparent; /* Fully transparent background */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s; /* Combined transition */
+}
+
+.linkedin-link:hover {
+  background-color: #eac6f6; /* Background color on hover */
+  border-color: blueviolet; /* Border color on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 480px) {
+  .about-header h2 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  .about-header h3 {
+    font-size: 16px; /* Smaller font size for subheadings */
+  }
+
+  .about-box ul {
+    font-size: 16px; /* Smaller font size for list items */
+  }
+
+  .about-img img {
+    margin-left: 0; /* Center the image */
+    margin-top: 0; /* Adjust for layout */
+  }
+
+  .github-link,
+  .linkedin-link {
+    font-size: 16px; /* Adjust button font size */
+  }
+}
+
+
+
+
+
+
+
+
+
+.skills-section {
+  padding: 70px 0;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out header and grid */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.skills-header {
+  flex: 1; /* Left side takes 1 part */
+  margin-left: 100px; /* Space on the left */
+  text-align: left; /* Align text to the left */
+}
+
+.skills-header h2 {
+  font-size: 32px;
+  color: #c4ff17;
+  margin-bottom: 20px;
+}
+
+.skills-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.learn-more-btn {
+  background-color: chartreuse;
+  color: black;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: limegreen;
+}
+
+.skills-grid {
+  flex: 2; /* Right side takes 2 parts */
+  display: flex;
+  width: 40px;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the cards */
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+  width: calc(21% - 30px); /* 4 boxes in a row with spacing */
+  height: 250px; /* Minimum width for smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 10px;
+  margin: 10px 0;
+}
+
+.progress {
+  background-color: chartreuse;
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.skill-content span {
+  font-size: 16px;
+  color: lightgray;
+}/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+  }
+
+  .skills-header {
+    margin: 5px;padding: 5px;
+     /* Reset margin on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .skills-grid {
+    width: 80%; /* Set a reasonable width for the grid */
+    gap: 10px; /* Adjust space between items */
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    /* Center the grid items */
+  }
+
+  .skill-card {
+    width: calc(50% - 10px); /* 2 boxes in a row on smaller screens */
+    min-width: 10px; 
+    height: 160px;
+   /* Set a minimum width for the cards */
+  }
+
+  /* Adjust font sizes for better readability on mobile */
+  .skills-header h2 {
+    font-size: 24px; /* Smaller font size for header */
+  }
+
+  .skills-header p {
+    font-size: 16px; /* Smaller font size for paragraph */
+  }
+
+  .learn-more-btn {
+    font-size: 16px; /* Adjust button font size */
+  }
+
+  .skill-content h3 {
+    font-size: 18px; /* Smaller font size for skill titles */
+  }
+
+  .skill-content span {
+    font-size: 14px; /* Smaller font size for skill details */
+  }
+}
